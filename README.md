@@ -50,5 +50,4 @@ autograde validar 4.2
 
 ## Reflexão — o que o MCP abstraiu
 
-_Em uma frase: qual detalhe da API REST o MCP tornou irrelevante para quem chama
-a tool?_
+O MCP tornou irrelevante saber que criar uma tarefa exige um `POST /tarefas` com corpo `{"titulo": "..."}` — o agente só precisa chamar `criar_tarefa(titulo)`, sem conhecer o verbo HTTP, a rota ou o formato do payload.
