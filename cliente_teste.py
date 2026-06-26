@@ -18,7 +18,7 @@ async def main() -> dict:
             listar = await session.call_tool("listar_tarefas", {})
 
             criar_resultado = json.loads(criar.content[0].text)
-            listar_resultado = json.loads(listar.content[0].text)
+            listar_resultado = [json.loads(c.text) for c in listar.content]
 
             return {
                 "tools": nomes,
