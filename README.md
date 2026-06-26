@@ -50,4 +50,4 @@ autograde validar 4.2
 
 ## Reflexão — o que o MCP abstraiu
 
-O MCP tornou irrelevante saber que criar uma tarefa exige um `POST /tarefas` com corpo `{"titulo": "..."}` — o agente só precisa chamar `criar_tarefa(titulo)`, sem conhecer o verbo HTTP, a rota ou o formato do payload.
+O MCP tornou irrelevante saber que criar uma tarefa exige um `POST /tarefas` com corpo `{"titulo": "..."}`. Agora o agente só precisa chamar `criar_tarefa(titulo)`, sem conhecer o verbo HTTP, a rota ou o formato do payload.
