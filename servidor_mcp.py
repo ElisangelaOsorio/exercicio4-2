@@ -1,3 +1,7 @@
+import logging
+
+logging.basicConfig(level=logging.WARNING)
+
 import httpx
 from mcp.server.fastmcp import FastMCP
 
